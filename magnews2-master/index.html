@@ -206,13 +206,17 @@
 						<ul class="main-menu">
 							<li class="main-menu-active">
 								<a href="index.html">Home</a>
+								<ul class="sub-menu" id="mainMenu">
+								</ul>
 							</li>
 							<li class="main-menu-active">
 								<a href="index.html">Category</a>
-								<ul class="sub-menu">
-									<li><a href="index.html">Homepage v1</a></li>
-									<li><a href="home-02.html">Homepage v2</a></li>
-									<li><a href="home-03.html">Homepage v3</a></li>
+								<ul class="sub-menu" id="mainMenuCategory">
+								</ul>
+							</li>
+							<li class="main-menu-active">
+								<a href="index.html">Other</a>
+								<ul class="sub-menu" id="mainMenuOther">
 								</ul>
 							</li>
 
@@ -1413,6 +1417,8 @@
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+	<script src="js/myCustom.js"></script>
 
 </body>
 
