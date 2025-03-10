@@ -1,3 +1,6 @@
 ul.zvn-custom-menu li.no-child a::after {
     content: "";
 }
+.pointer-event-none {
+    pointer-events: none;
+}
