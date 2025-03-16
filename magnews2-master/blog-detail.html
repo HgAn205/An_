@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title class="category-name"></title>
+	<title class="blog-title"></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -165,7 +165,55 @@
 				</ul>
 
 				<ul class="main-menu-m">
-					<li> <!-- Home is deleted-->
+					<li>
+						<a href="index.html">Home</a>
+						<ul class="sub-menu-m">
+
+						</ul>
+
+						<span class="arrow-main-menu-m">
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</span>
+					</li>
+
+					<li>
+						<a href="category-01.html">News</a>
+					</li>
+
+					<li>
+						<a href="category-02.html">Entertainment </a>
+					</li>
+
+					<li>
+						<a href="category-01.html">Business</a>
+					</li>
+
+					<li>
+						<a href="category-02.html">Travel</a>
+					</li>
+
+					<li>
+						<a href="category-01.html">Life Style</a>
+					</li>
+
+					<li>
+						<a href="category-02.html">Video</a>
+					</li>
+
+					<li>
+						<a href="#">Features</a>
+						<ul class="sub-menu-m">
+							<li><a href="category-01.html">Category Page v1</a></li>
+							<li><a href="category-02.html">Category Page v2</a></li>
+							<li><a href="blog-grid.html">Blog Grid Sidebar</a></li>
+							<li><a href="blog-list-01.html">Blog List Sidebar v1</a></li>
+							<li><a href="blog-list-02.html">Blog List Sidebar v2</a></li>
+							<li><a href="blog-detail-01.html">Blog Detail Sidebar</a></li>
+							<li><a href="blog-detail-02.html">Blog Detail No Sidebar</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+
 						<span class="arrow-main-menu-m">
 							<i class="fa fa-angle-right" aria-hidden="true"></i>
 						</span>
@@ -206,13 +254,17 @@
 
 	<!-- Breadcrumb -->
 	<div class="container">
-		<div class="bg0 flex-wr-sb-c p-rl-20 p-tb-8">
+		<div class="headline bg0 flex-wr-sb-c p-rl-20 p-tb-8">
 			<div class="f2-s-1 p-r-30 m-tb-6">
 				<a href="index.html" class="breadcrumb-item f1-s-3 cl9">
 					Home
 				</a>
-				<span class="breadcrumb-item f1-s-3 cl9 category-name">
-					Entertaiment
+
+				<a href="#" class="breadcrumb-item f1-s-3 cl9" id="name-category">
+					Blog
+				</a>
+
+				<span class="breadcrumb-item f1-s-3 cl9 blog-title">
 				</span>
 			</div>
 
@@ -225,94 +277,108 @@
 		</div>
 	</div>
 
-	<!-- Page heading -->
-	<div class="container p-t-4 p-b-40">
-		<h2 class="f1-l-1 cl2 category-name"></h2>
-	</div>
-
-	<!-- Feature post -->
-	<section class="bg0">
-		<div class="container" id="main-article-category">
-
-		</div>
-	</section>
-
-	<!-- Post -->
-	<section class="bg0 p-t-70 p-b-55">
+	<!-- Content -->
+	<section class="bg0 p-b-140 p-t-10">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-md-10 col-lg-8 p-b-80">
-					<div class="row" id="articles-other">
+				<div class="col-md-10 col-lg-8 p-b-30">
+					<div class="p-r-10 p-r-0-sr991">
+						<!-- Blog Detail -->
+						<div id="blog">
 
-					</div>
+							<!-- Tag -->
+							<div class="flex-s-s p-t-12 p-b-15">
+								<span class="f1-s-12 cl5 m-r-8">
+									Tags:
+								</span>
 
-					<!-- Pagination -->
-					<!-- <div class="txt-center"><button class="btn btn-success" id="funLoadMore">Xem thêm</button></div> -->
-					<div class="flex-wr-s-c m-rl--7 p-t-15" id="total-page">
-						<!-- <a href="#" class="btn btn-outline-success">Prevous</a>
-						<a href="#" class="flex-c-c pagi-item hov-btn1 trans-03 m-all-7 pagi-active">1</a>
-						<a href="#" class="flex-c-c pagi-item hov-btn1 trans-03 m-all-7">2</a>
-						<a href="#" class="btn btn-outline-success">Next</a> -->
+								<div class="flex-wr-s-s size-w-0">
+									<a href="#" class="f1-s-12 cl8 hov-link1 m-r-15">
+										Streetstyle
+									</a>
+
+									<a href="#" class="f1-s-12 cl8 hov-link1 m-r-15">
+										Crafts
+									</a>
+								</div>
+							</div>
+							<!-- Share -->
+							<div class="flex-s-s">
+								<span class="f1-s-12 cl5 p-t-1 m-r-15">
+									Share:
+								</span>
+
+								<div class="flex-wr-s-s size-w-0">
+									<a href="#"
+										class="dis-block f1-s-13 cl0 bg-facebook borad-3 p-tb-4 p-rl-18 hov-btn1 m-r-3 m-b-3 trans-03">
+										<i class="fab fa-facebook-f m-r-7"></i>
+										Facebook
+									</a>
+
+									<a href="#"
+										class="dis-block f1-s-13 cl0 bg-twitter borad-3 p-tb-4 p-rl-18 hov-btn1 m-r-3 m-b-3 trans-03">
+										<i class="fab fa-twitter m-r-7"></i>
+										Twitter
+									</a>
+
+									<a href="#"
+										class="dis-block f1-s-13 cl0 bg-google borad-3 p-tb-4 p-rl-18 hov-btn1 m-r-3 m-b-3 trans-03">
+										<i class="fab fa-google-plus-g m-r-7"></i>
+										Google+
+									</a>
+
+									<a href="#"
+										class="dis-block f1-s-13 cl0 bg-pinterest borad-3 p-tb-4 p-rl-18 hov-btn1 m-r-3 m-b-3 trans-03">
+										<i class="fab fa-pinterest-p m-r-7"></i>
+										Pinterest
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Leave a comment -->
+						<div class="row" id="detail-category">
+
+						</div>
 					</div>
 				</div>
 
-				<div class="col-md-10 col-lg-4 p-b-80">
-					<div class="p-l-10 p-rl-0-sr991">
-						<!-- Subscribe -->
-						<div class="bg10 p-rl-35 p-t-28 p-b-35 m-b-50">
-							<h5 class="f1-m-5 cl0 p-b-10">
-								Subscribe
-							</h5>
+				<!-- Sidebar -->
+				<div class="col-md-10 col-lg-4 p-b-30">
+					<div class="p-l-10 p-rl-0-sr991 p-t-70">
 
-							<p class="f1-s-1 cl0 p-b-25">
-								Get all latest content delivered to your email a few times a month.
-							</p>
-
-							<form class="size-a-9 pos-relative">
-								<input class="s-full f1-m-6 cl6 plh9 p-l-20 p-r-55" type="text" name="email"
-									placeholder="Email">
-
-								<button class="size-a-10 flex-c-c ab-t-r fs-16 cl9 hov-cl10 trans-03">
-									<i class="fa fa-arrow-right"></i>
-								</button>
-							</form>
-						</div>
-
-						<!-- Most Popular -->
-						<div class="p-b-23">
+						<!-- Popular Posts -->
+						<div>
 							<div class="how2 how2-cl4 flex-s-c">
 								<h3 class="f1-m-2 cl3 tab01-title">
-									Most Popular
+									Bài Viết Phổ Biến
 								</h3>
 							</div>
 
 							<ul class="p-t-35" id="popular-category">
-
 							</ul>
 						</div>
 
-						<!--  -->
-						<div class="flex-c-s p-b-50">
-							<a href="#">
-								<img class="max-w-full" src="images/banner-02.jpg" alt="IMG">
-							</a>
+
+
+						</ul>
+					</div>
+
+					<!-- Tag -->
+					<div>
+						<div class="how2 how2-cl4 flex-s-c m-b-30">
+							<h3 class="f1-m-2 cl3 tab01-title">
+								Tags
+							</h3>
 						</div>
 
-						<!-- Tag -->
-						<div>
-							<div class="how2 how2-cl4 flex-s-c m-b-30">
-								<h3 class="f1-m-2 cl3 tab01-title">
-									Tags
-								</h3>
-							</div>
+						<div class="flex-wr-s-s m-rl--5" id="render-tags">
 
-							<div class="flex-wr-s-s m-rl--5" id="render-tags">
-
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 
@@ -428,7 +494,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/relativeTime.js"></script>
 	<script src="js/myCustom.js"></script>
-	<script src="js/category.js"></script>
+	<script src="js/blog-detail.js"></script>
+
 </body>
 
 </html>
