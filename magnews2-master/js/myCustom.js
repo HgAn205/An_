@@ -1,12 +1,14 @@
 const API = axios.create({
     baseURL: 'https://apiforlearning.zendvn.com/api/v2',
   });
+
 dayjs.extend(dayjs.extend(window.dayjs_plugin_relativeTime));
-elmMainMenu = document.getElementById("main-menu");
-elmPopular = document.getElementById("popular-category");
-elmTags = document.getElementById("render-tags");
-elmFtCategory = document.getElementById("footer-category");
-elmFtPopular = document.getElementById("popular-footer");
+let elmMainMenu = document.getElementById("main-menu");
+let elmPopular = document.getElementById("popular-category");
+let elmTags = document.getElementById("render-tags");
+let elmFtCategory = document.getElementById("footer-category");
+let elmFtPopular = document.getElementById("popular-footer");
+let inputClientKey = document.getElementById("getClientKey");
 
 
 const queryString = window.location.search;
@@ -14,6 +16,7 @@ const urlParams = new URLSearchParams(queryString);
 const id = parseInt(urlParams.get('id'));
 const cateid = parseInt(urlParams.get('cateid'));
 
+// CREATE URL
 function creatLinkDetail(id , categoryID) {
     return `blog-detail.html?id=${id}&cateid=${categoryID}`;
 } 
@@ -116,3 +119,15 @@ API.get('articles/popular?limit=5').then((res) => {
     elmFtPopular.innerHTML = htmlPopularFooter;
 });
 
+// SEARCH
+inputClientKey.addEventListener("keyup", function(event) {
+    if (event.key === 'Enter') {
+        let keyword = inputClientKey.value.trim();
+        if (keyword) {
+            window.location.href = `search-blog.html?keyword=${keyword}`;
+        }else {
+            alert('vui lòng nhập từ khóa cần tìm');
+            keyword = '';
+        }
+    }
+});
