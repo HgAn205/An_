@@ -32,183 +32,7 @@
 <body class="animsition">
 
 	<!-- Header -->
-	<header>
-		<!-- Header desktop -->
-		<div class="container-menu-desktop">
-			<div class="topbar">
-				<div class="content-topbar container h-100">
-					<div class="left-topbar">
-						<span class="left-topbar-item flex-wr-s-c">
-							<span>
-								New York, NY
-							</span>
-
-							<img class="m-b-1 m-rl-8" src="images/icons/icon-night.png" alt="IMG">
-
-							<span>
-								HI 58° LO 56°
-							</span>
-						</span>
-
-						<a href="#" class="left-topbar-item">
-							About
-						</a>
-
-						<a href="#" class="left-topbar-item">
-							Contact
-						</a>
-
-						<a href="#" class="left-topbar-item">
-							Sing up
-						</a>
-
-						<a href="#" class="left-topbar-item">
-							Log in
-						</a>
-					</div>
-
-					<div class="right-topbar">
-						<a href="#">
-							<span class="fab fa-facebook-f"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-twitter"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-pinterest-p"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-vimeo-v"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-youtube"></span>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- Header Mobile -->
-			<div class="wrap-header-mobile">
-				<!-- Logo moblie -->
-				<div class="logo-mobile">
-					<a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
-				</div>
-
-				<!-- Button show menu -->
-				<div class="btn-show-menu-mobile hamburger hamburger--squeeze m-r--8">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</div>
-			</div>
-
-			<!-- Menu Mobile -->
-			<div class="menu-mobile">
-				<ul class="topbar-mobile">
-					<li class="left-topbar">
-						<span class="left-topbar-item flex-wr-s-c">
-							<span>
-								New York, NY
-							</span>
-
-							<img class="m-b-1 m-rl-8" src="images/icons/icon-night.png" alt="IMG">
-
-							<span>
-								HI 58° LO 56°
-							</span>
-						</span>
-					</li>
-
-					<li class="left-topbar">
-						<a href="#" class="left-topbar-item">
-							About
-						</a>
-
-						<a href="#" class="left-topbar-item">
-							Contact
-						</a>
-
-						<a href="#" class="left-topbar-item">
-							Sing up
-						</a>
-
-						<a href="#" class="left-topbar-item">
-							Log in
-						</a>
-					</li>
-
-					<li class="right-topbar">
-						<a href="#">
-							<span class="fab fa-facebook-f"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-twitter"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-pinterest-p"></span>
-						</a>
-						main-menu
-						<a href="#">
-							<span class="fab fa-vimeo-v"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-youtube"></span>
-						</a>
-					</li>
-				</ul>
-
-				<ul class="main-menu-m">
-					<li>
-						<a href="index.html">Home</a>
-						<ul class="sub-menu-m">
-							<!-- menu -->
-						</ul>
-
-						<span class="arrow-main-menu-m">
-							<i class="fa fa-angle-right" aria-hidden="true"></i>
-						</span>
-					</li>
-				</ul>
-			</div>
-
-			<!--  -->
-			<div class="wrap-logo container">
-				<!-- Logo desktop -->
-				<div class="logo">
-					<a href="index.html"><img src="images/icons/logo-01.png" alt="LOGO"></a>
-				</div>
-
-				<!-- Banner -->
-				<div class="banner-header">
-					<a href="https://themewagon.com/themes/free-bootstrap-4-html5-news-website-template-magnews2/"><img
-							src="images/banner-01.jpg" alt="IMG"></a>
-				</div>
-			</div>
-
-			<!--  -->
-			<div class="wrap-main-nav">
-				<div class="main-nav">
-					<!-- Menu desktop -->
-					<nav class="menu-desktop">
-						<a class="logo-stick" href="index.html">
-							<img src="images/icons/logo-01.png" alt="LOGO">
-						</a>
-
-						<ul class="main-menu zvn-custom-menu" id="main-menu">
-
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
+	<my-header></my-header>
 
 	<!-- Headline -->
 	<div class="container">
@@ -234,13 +58,8 @@
 				</span>
 			</div>
 
-			<div class="pos-relative size-a-2 bo-1-rad-22 of-hidden bocl11 m-tb-6">
-				<input class="f1-s-1 cl6 plh9 s-full p-l-25 p-r-45" type="text" name="search" placeholder="Search"
-					id="getClientKey">
-				<button class="flex-c-c size-a-1 ab-t-r fs-20 cl2 hov-cl10 trans-03">
-					<i class="zmdi zmdi-search"></i>
-				</button>
-			</div>
+			<my-search></my-search>
+
 		</div>
 	</div>
 
@@ -434,95 +253,7 @@
 	</section>
 
 	<!-- Footer -->
-	<footer>
-		<div class="bg2 p-t-40 p-b-25">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 p-b-20">
-						<div class="size-h-3 flex-s-c">
-							<a href="index.html">
-								<img class="max-s-full" src="images/icons/logo-02.png" alt="LOGO">
-							</a>
-						</div>
-
-						<div>
-							<p class="f1-s-1 cl11 p-b-16">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor magna eget
-								elit efficitur, at accumsan sem placerat. Nulla tellus libero, mattis nec molestie at,
-								facilisis ut turpis. Vestibulum dolor metus, tincidunt eget odio
-							</p>
-
-							<p class="f1-s-1 cl11 p-b-16">
-								Any questions? Call us on (+1) 96 716 6879
-							</p>
-
-							<div class="p-t-15">
-								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-									<span class="fab fa-facebook-f"></span>
-								</a>
-
-								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-									<span class="fab fa-twitter"></span>
-								</a>
-
-								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-									<span class="fab fa-pinterest-p"></span>
-								</a>
-
-								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-									<span class="fab fa-vimeo-v"></span>
-								</a>
-
-								<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-									<span class="fab fa-youtube"></span>
-								</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-lg-4 p-b-20">
-						<div class="size-h-3 flex-s-c">
-							<h5 class="f1-m-7 cl0">
-								Popular Posts
-							</h5>
-						</div>
-
-						<ul id="popular-footer">
-
-						</ul>
-					</div>
-
-					<div class="col-sm-6 col-lg-4 p-b-20">
-						<div class="size-h-3 flex-s-c">
-							<h5 class="f1-m-7 cl0">
-								Category
-							</h5>
-						</div>
-
-						<ul class="m-t--12" id="footer-category">
-
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="bg11">
-			<div class="container size-h-4 flex-c-c p-tb-15">
-				<span class="f1-s-1 cl0 txt-center">
-					Copyright © 2018
-
-					<a href="#"
-						class="f1-s-1 cl10 hov-link1"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-						is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-							target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				</span>
-			</div>
-		</div>
-	</footer>
+	<my-footer></my-footer>
 
 	<!-- Back to top -->
 	<div class="btn-back-to-top" id="myBtn">
@@ -556,6 +287,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/relativeTime.js"></script>
+	<script src="component/search.js"></script>
+	<script src="component/header.js"></script>
+	<script src="component/footer.js"></script>
 	<script src="js/myCustom.js"></script>
 	<script src="js/index.js"></script>
 
